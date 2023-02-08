@@ -5,7 +5,7 @@ import {
   SearchFormInput,
 } from './Searchbar.styled';
 import PropTypes from 'prop-types';
-import { FaSearchDollar } from 'react-icons/fa';
+import { FcSearch } from 'react-icons/fc';
 
 export const Searchbar = ({ onSubmit }) => {
   const handleSubmit = e => {
@@ -16,7 +16,7 @@ export const Searchbar = ({ onSubmit }) => {
   return (
     <SearchForm onSubmit={handleSubmit}>
       <SearchFormBtn type="submit">
-        <FaSearchDollar size="30" />
+        <FcSearch size="30" />
         <SearchFormBtnLabel>Search</SearchFormBtnLabel>
       </SearchFormBtn>
       <SearchFormInput

@@ -6,8 +6,7 @@ import {
   MoviesGalleryImg,
   MoviesGalleryContentWrp,
   MoviesGalleryTitle,
-  MoviesGalleryDate,
-  MoviesGalleryWrp,
+ 
 } from './MoviesGalleryItem.styled';
 import { urlGenerator } from 'components/helpers/urlGenerator';
 import { useLocation } from 'react-router-dom';
@@ -27,10 +26,7 @@ export const MoviesGalleryItem = ({
         </MoviesGalleryImageWrp>
         <MoviesGalleryContentWrp>
           <MoviesGalleryTitle>{title || name}</MoviesGalleryTitle>
-          <MoviesGalleryDate>
-            Release date:
-            <MoviesGalleryWrp> {release_date || 'not found'}</MoviesGalleryWrp>
-          </MoviesGalleryDate>
+          
         </MoviesGalleryContentWrp>
       </StyledLink>
     </MoviesGalleryItemWrp>

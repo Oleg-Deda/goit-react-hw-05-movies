@@ -7,6 +7,7 @@ export const Container = styled.div`
 export const Header = styled.header`
   border-bottom: 1px solid #000000;
   box-shadow: 0px 1px 2px #121306;
+  color: #ffffff;
   border-radius: 4px;
   display: flex;
   align-items: center;
@@ -23,22 +24,19 @@ export const MainNav = styled.nav`
 export const StyledLink = styled(NavLink)`
   padding: 6px 10px;
   outline: none;
-  border-radius: 10px;
+  border-radius: 4px;
   text-decoration: none;
   color: #ffffff;
-  background: linear-gradient(145deg, #0d013e, #2711ba);
-  box-shadow: 2px 3px 4px #2e2bc2;
-  transition: 250ms transform ease-in-out, 300ms box-shadow ease-out,
-    150ms color ease-in;
-  &:hover,
+  background: #121306;
+    box-shadow: 2px 3px 4px #66fa64;
+    &:hover,
   &:focus {
-    color: #ffbb00;
-    transform: scale(1.04);
-    box-shadow: 2px 3px 4px #b8c501, 1px 1px 2px #fbff00;
+    color: #03e158;
+        box-shadow: 2px 3px 4px #009ec1, 1px 1px 2px #8964fa;
   }
 
   &.active {
-    color: #ffbb00;
-    background: linear-gradient(145deg, #1b0181, #0149a8);
+    color: #03e158;
+    background: #121306;
   }
 `;
